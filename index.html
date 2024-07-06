@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Achievements Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="achievement" id="artisan-achievement">
+        <div class="achievement-icon" onclick="toggleAchievementDetails('artisan')">
+            <img src="assets/greyed_artisan_icon.png" alt="Artisan Achievement">
+            <p>Artisan</p>
+        </div>
+        <div class="achievement-details" id="artisan-details">
+            <div class="category" id="artisan-bombs">
+                <div class="category-header" onclick="toggleCategoryDetails('bombs')">
+                    <p>Bombs</p>
+                </div>
+                <div class="category-details" id="bombs-details">
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Cherry_Bomb.png" alt="Cherry_Bomb">
+                        <p>Cherry Bomb</p>
+                        <p>Blueprint: Mining Lv.1</p>
+                        <p>Materials:<br>Copper Ore x4 <br>Coal x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Bomb.png" alt="Bomb">
+                        <p>Bomb</p>
+                        <p>Blueprint: Mining Lv.6</p>
+                        <p>Materials:<br>Iron Ore x4 <br>Coal x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Mega_Bomb.png" alt="Mega_Bomb">
+                        <p>Mega Bomb</p>
+                        <p>Blueprint: Mining Lv.8</p>
+                        <p>Materials:<br>Gold Ore x4 <br>Solar Essence x1<br>Void Essence x1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="artisan-fences">
+                <div class="category-header" onclick="toggleCategoryDetails('fences')">
+                    <p>Fences</p>
+                </div>
+                <div class="category-details" id="fences-details">
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Gate.png" alt="Gate">
+                        <p>Gate</p>
+                        <p>Blueprint: Starter</p>
+                        <p>Materials:<br>Wood x10</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Wood_Fence.png" alt="Wood_Fence">
+                        <p>Wood Fence</p>
+                        <p>Blueprint: Starter</p>
+                        <p>Materials:<br>Wood x2</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Stone_Fence.png" alt="Stone_Fence">
+                        <p>Stone Fence</p>
+                        <p>Blueprint: Farming lv.2</p>
+                        <p>Materials:<br>Stone x2</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Iron_Fence.png" alt="Iron_Fence">
+                        <p>Iron Fence</p>
+                        <p>Blueprint: Farming lv.4</p>
+                        <p>Materials:<br>Iron Bar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Hardwood_Fence.png" alt="Hardwood_Fence">
+                        <p>Hardwood Fence</p>
+                        <p>Blueprint: Farming lv.6</p>
+                        <p>Materials:<br>Hardwood x1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="artisan-sprinklers">
+                <div class="category-header" onclick="toggleCategoryDetails('sprinklers')">
+                    <p>Sprinklers</p>
+                </div>
+                <div class="category-details" id="sprinklers-details">
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Sprinkler.png" alt="Sprinkler">
+                        <p>Sprinkler</p>
+                        <p>Blueprint: Farming lv.2</p>
+                        <p>Materials:<br>Copper Bar x1<br>Iron Bar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Quality_Sprinkler.png" alt="Quality_Sprinkler">
+                        <p>Quality Sprinkler</p>
+                        <p>Blueprint: Farming lv.6</p>
+                        <p>Materials:<br>Iron Bar x1<br>Gold Bar x1<br>Refined Quartz x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Iridium_Sprinkler.png" alt="Iridium_Sprinkler">
+                        <p>Iridium Sprinkler</p>
+                        <p>Blueprint: Farming lv.9</p>
+                        <p>Materials:<br>Gold Bar x1<br>Iridium Bar x1<br>Battery Pack x1</p>
+                    </div>
+            <div class="category" id="artisan-equipment">
+                 <div class="category-header" onclick="toggleCategoryDetails('artisan_equipment')">
+                    <p>Artisan Equipment</p>
+                </div>
+                <div class="category-details" id="artisan-equipment-details">
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Mayonnaise_Machine.png alt="Mayonnaise Machine">
+                        <p>Mayonnaise Machine</p>
+                        <p>Blueprint: Farming lv.2</p>
+                        <p>Materials:<br>Wood x15 <br>Stone x15<br>Earth Crystal x1<br>Copper Bar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Preserves_Jar.png" alt="Preserves_Jar">
+                        <p>Preserves Jar</p>
+                        <p>Blueprint: Farming lv.4</p>
+                        <p>Materials:<br>Wood x50<br>Stone x40<br>Coal x8</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Cheese_Press.png" alt="Cheese_Press">
+                        <p>Cheese Press</p>
+                        <p>Blueprint: Farming lv.6</p>
+                        <p>Materials:<br>Wood x45<br>Stone x45<br>Hardwood x10<br>Copper Bar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Loom.png" alt="Loom">
+                        <p>Loom</p>
+                        <p>Blueprint: Farming lv.7</p>
+                        <p>Materials:<br>Wiood x60<br>Fiber x30<br>Pine Tar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Keg.png" alt="Keg">
+                        <p>Keg</p>
+                        <p>Blueprint: Farming lv.8</p>
+                        <p>Materials:<br>Wood x30<br>Copper Bar x1<br>Iron Bar x1<br>Oak Resin x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Oil_Maker.png" alt="Oil_Maker">
+                        <p>Oil Maker</p>
+                        <p>Blueprint: Farming lv.8</p>
+                        <p>Materials:<br>Slime x50<br>Hardwood x20<br>Gold Bar x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Cask.png" alt="Cask">
+                        <p>Cask</p>
+                        <p>Blueprint: Farmhouse cellar upgrade</p>
+                        <p>Materials:<br>Wood x20<br>Hardwood x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Fish_Smoker.png" alt="Fish_Smoker">
+                        <p>Fish Smoker</p>
+                        <p>Blueprint: Fish shop for 10.000g</p>
+                        <p>Materials:<br>Hardoow x10<br>Sea Jelly x1<br>River Jelly x1<br>Cave Jelly x1</p>
+                    </div>
+                    <div class="item" onclick="toggleItemCompletion(this)">
+                        <img src="craftables/Dehydrator.png" alt="Dehydrator">
+                        <p>Dehydrator</p>
+                        <p>Blueprint: Pierre's for 10.000g</p>
+                        <p>Materials:<br>Wood x30<br>Clay x2<br>Fire Quartz x1</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
